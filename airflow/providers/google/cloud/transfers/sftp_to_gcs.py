@@ -192,3 +192,4 @@ class SFTPToGCSOperator(BaseOperator):
     def _set_bucket_name(name: str) -> str:
         bucket = name if not name.startswith("gs://") else name[5:]
         return bucket.strip("/")
+
